@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ImageRec</string>
+    <string name="click_to_add_image">Click + to add image</string>
+    <string name="result">Result</string>
+    <string name="image_preview">Image Preview</string>
+    <string name="add_image">Add Image</string>
+    <string name="theme">Theme</string>
+    <string name="information">Information</string>
+</resources>
