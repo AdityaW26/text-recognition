@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <item android:id="@+id/add"
+    <item android:id="@+id/scan"
         android:title="@string/add_image"
-        android:icon="@drawable/ic_baseline_add_circle_24"
+        android:icon="@drawable/ic_baseline_qr_code_scanner_24"
         android:iconTint="@color/white"
         app:showAsAction="always"/>
-
-    <item android:id="@+id/theme"
-        android:title="@string/theme"
-        android:icon="@drawable/ic_brightness_medium_24"
-        android:iconTint="@color/white"
-        app:showAsAction="always" />
-
-    <item android:id="@+id/info"
-        android:title="@string/information"
-        android:icon="@drawable/ic_baseline_info_24"
-        android:iconTint="@color/white"
-        app:showAsAction="never" />
 
 </menu>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerateQRActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/appBarLayout"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    android:background="@android:color/transparent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_alignParentStart="true"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/iv_back"
+                    android:text="Genrate QR Code"
+                    android:textColor="@color/white"
+                    android:textSize="19sp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBarLayout"
+        android:layout_marginTop="30dp"
+        android:paddingHorizontal="10dp">
+
+        <EditText
+            android:id="@+id/qrinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/voiceBtn"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/edittext_background"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="12dp"
+            android:hint="Enter Value"
+            android:textColorHint="@color/background_color"
+            android:textColor="@color/text_color"/>
+
+        <ImageButton
+            android:id="@+id/voiceBtn"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_keyboard_voice_24"
+            android:contentDescription="@string/app_name"
+            android:background="@drawable/icon_background"
+            android:tint="@color/black"
+            android:layout_marginEnd="10dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/generateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/buttton_background"
+        android:layout_below="@+id/rl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:text="GENERATE"
+        android:textAlignment="center"
+
+        />
+
+    <TextView
+        android:id="@+id/headerQRPreview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generateBtn"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="QR Code Preview :"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:textFontWeight="900"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/noQRCodeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="No QR Code generated yet"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:textFontWeight="500"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/headerQRPreview"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/menu" android:checkableBehavior="single">
+
+        <item android:title="Menu" android:id="@+id/menu1">
+
+            <menu>
+
+                <item android:id="@+id/generateQr" android:title="Generate QR code"
+                    android:contentDescription="@string/app_name" android:iconTint="@color/text_color"
+                    android:icon="@drawable/ic_baseline_qr_code_24"
+                    />
+                <item android:id="@+id/scanQr" android:title="Scan QR code"
+                    android:contentDescription="@string/app_name" android:iconTint="@color/text_color"
+                    android:icon="@drawable/ic_baseline_qr_code_scanner_24"/>
+
+            </menu>
+
+        </item>
+
+    </group>
+
+    <group android:id="@+id/personalize" android:checkableBehavior="single">
+
+        <item android:title="Personalization" android:id="@+id/menu2">
+
+            <menu>
+
+                <item android:id="@+id/darkMode"
+                    android:contentDescription="@string/app_name"
+                    android:title="Dark Mode"
+                    android:icon="@drawable/ic_baseline_dark_mode_24"
+                    android:iconTint="@color/text_color"
+                    app:actionViewClass="androidx.appcompat.widget.SwitchCompat"
+                    app:actionLayout="@layout/switch_mode_layout" />
+
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

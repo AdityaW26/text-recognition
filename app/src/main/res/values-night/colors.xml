@@ -10,7 +10,7 @@
     <color name="grey">#474747</color>
 
 
-    <color name="text_color">#000000</color>
-    <color name="background_color">#D3D3D3</color>
-    <color name="card_color">#FFFFFF</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="background_color">#838383</color>
+    <color name="card_color">#838383</color>
 </resources>

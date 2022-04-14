@@ -6,4 +6,8 @@
     <string name="add_image">Add Image</string>
     <string name="theme">Theme</string>
     <string name="information">Information</string>
+
+
+    <string name="open">open</string>
+    <string name="close">close</string>
 </resources>
